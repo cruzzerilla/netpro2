@@ -13,7 +13,7 @@
 
 ## Soal No 2
 
-![Topologi](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/topologi.png)
+![alt Topologi][topologi]
 
 Kami memakai vps dalam pengerjaan proyek ini. Topologi yang digunakan adalah topologi tree. Alasan kami memakai topologi tree karena topologi ini mudah dalam pengelolaan, dan mudah melakukan identifikasi dan isolasi kesalahan-kesalahan yang terjadi dalam jaringan yang dibangun.
 
@@ -27,29 +27,37 @@ Kami memakai vps dalam pengerjaan proyek ini. Topologi yang digunakan adalah top
 
 Server yang kami bangun dijalankan menggunakan Virtual Machine dengan sistem operasi CentOS 7. Untuk melakukan konfigurasi, kami menggunakan ssh supaya bisa dilakukan secara remote dari device lain yang terhubung dalam 1 jaringan.
 
-![SSH](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/ssh.png)
+![alt SSH][ssh]
 
 ### Web Server
 Web Server kami menggunakan Apache karena untuk konfigurasinya lebih mudah dibanding nginx. Web Server dijalankan pada port 80 atau http.
 
-![Web Server](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/web-server.png)
+![alt WebServer][webserver]
 
 ### Database Server
 Database Server yang kami gunakan adalah MariaDB yang merupakan database yang dikembangkan dari MySQL. Untuk GUI-nya, kami menggunakan phpMyAdmin yang merupakan tools berbasis php yang bisa digunakan untuk mengatur database MySQL atau MariaDB.
 
-![Database Server](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/database-server.png)
+![alt DatabaseServer][databaseserver]
 
 ### FTP Server
 FTP Server yang kami gunakan adalah vsftpd. Vsftpd merupakan FTP Server yang cukup mudah konfigurasinya. Pada server kami, folder yang dapat diakses oleh FTP adalah folder /home/user
 
-![FTP Server](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/ftp-server.png)
+![alt FTPServer][ftpserver]
 
 ### Mail Server
 Untuk membangun mail server, kami menggunakan 3 service, yaitu Postfix, Dovecot, dan Squirrelmail. Postfix berfungsi untuk mengirim email, Dovecot berfungsi untuk menerima email, dan Squirrelmail berfungsi sebagai GUI berbasis web untuk me-manage email atau biasa disebut sebagai webmail.
 
-![Mail Server](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/mail-server.png)
+![alt MailServer][mailserver]
 
 ### Server Monitoring
 Server Monitoring yang kami gunakan adalah Cacti. Cacti membutuhkan beberapa service lain supaya dapat berjalan, yaitu web server (Apache), database server (MariaDB), SNMP, dan RRDTool. Web server berfungsi sebagai GUI untuk memonitor server, sedangkan database server berfungsi untuk menyimpan data monitoring supaya bisa dicek kembali di lain waktu.
 
-![Server Monitoring](https://raw.githubusercontent.com/adityaeka26/network-programming-2/master/images/server-monitor-cacti.png)
+![alt ServerMonitoring][servermonitoring]
+
+[topologi]: images/topologi.png
+[ssh]: images/ssh.png
+[webserver]: images/web-server.png
+[databaseserver]: images/database-server.png
+[ftpserver]: images/ftp-server.png
+[topologi]: images/mail-server.png
+[servermonitoring]: images/server-monitor-cacti.png
